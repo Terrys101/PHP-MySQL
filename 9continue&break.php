@@ -7,8 +7,14 @@ $_products = [
     ['name' => 'ligthing blot', 'price' => 40],
     ['name' => 'banana skin', 'price' => 2],
    ];
-       foreach($_products as $_products){
-        
+       foreach($_products as $_product){
+       if($_product['name'] == 'ligthing blot'){
+        break;
+       } 
+       if($_product['price'] > 15){
+        continue;
+       }
+       echo $_product['name']. '<br />';
        }
    ?>
 
